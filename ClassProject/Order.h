@@ -153,8 +153,19 @@ public:
 };
 
 
+//Conultas de Paginas para dar referencia al codigo 
+//InOrderIterative
+//https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/
+//PreOrderIterative
+//https://www.geeksforgeeks.org/iterative-preorder-traversal/
+//PostOrderIterative
+//https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
 
+//NOTA IMPORTANTE 
 
+//NO PUDE TOMAR EL CODIGO Y IMPLEMENTARLO EN EL ARCHIVO BINARYTREE.H PORQUE EL CODIGO QUE MI EQUIPO CREO HACE MUCHO CONFLICTO CON EL CODIGO YA ESTABLECIDO DENTRO DE ESE ARCHIVO
+//DANDO ASI ERRORES COMO DUPLICACION DE VARIABLES, FUNCIONES ETC Y SE NOS HIZO MAS SENCILLO Y MENOS MOLESTO CREAR UN NUEVO APARTADO DONDE SE PUSO Y CREO EL CODIGO MOSTRADO
+//TRATAMOS DE TODO Y BUENO SE NOS ACABO EL TIEMPO ASI QUE ESE PUNTO SI TENDREMOS QUE DEJARLO ASI.
 
 
 
