@@ -427,32 +427,43 @@ int main()
     //// test.~RawArray();
 
 
-     // Crea un árbol binario y agrega algunos nodos para probar las funciones.
-    BinaryTree<int> binaryTree;
-    binaryTree.Insert(50);
-    binaryTree.Insert(30);
-    binaryTree.Insert(70);
-    binaryTree.Insert(20);
-    binaryTree.Insert(40);
-    binaryTree.Insert(60);
-    binaryTree.Insert(80);
+ 
 
-    std::cout << "InOrder (iterativo): ";
-    binaryTree.InOrderIterative();
-    std::cout << std::endl;
 
-    std::cout << "PreOrder (iterativo): ";
-    binaryTree.PreOrderIterative();
-    std::cout << std::endl;
+ 
+        BinaryTree<int> tree;
+        tree.Insert(5);
+        tree.Insert(3);
+        tree.Insert(7);
+        tree.Insert(2);
+        tree.Insert(4);
+        tree.Insert(6);
+        tree.Insert(8);
 
-    std::cout << "PostOrder (iterativo): ";
-    binaryTree.PostOrderIterative();
-    std::cout << std::endl;
+        Node<int>* root = tree.GetRoot(); // Obtener el nodo raíz
 
-    // Otros casos de prueba y funciones que desees probar.
+        std::cout << "InOrder: ";
+        tree.InOrderIterative();
+        std::cout << std::endl;
 
-    return 0;
-}
+        std::cout << "PreOrder: ";
+        tree.PreOrderIterative();
+        std::cout << std::endl;
+
+        std::cout << "PostOrder: ";
+        tree.PostOrderIterative();
+        std::cout << std::endl;
+
+        // Encontrar el predecesor del nodo con valor 7
+        Node<int>* node7 = root->right->left;
+        Node<int>* predecessor7 = tree.Predecessor(node7);
+        if (predecessor7)
+            std::cout << "Predecesor de 7: " << predecessor7->data << std::endl;
+        else
+            std::cout << "7 no tiene predecesor" << std::endl;
+
+        return 0;
+    }
 
 
 
